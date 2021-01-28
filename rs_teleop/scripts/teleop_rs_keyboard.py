@@ -90,7 +90,7 @@ class PublishThread(threading.Thread):
         self.LateralFraction = 0.0
         self.YawRate = 0.0
         self.StepVelocity = 1.1
-        self.ClearanceHeight = 0.1
+        self.ClearanceHeight = 0.06 #0.1
         self.PenetrationDepth = 0.003
         self.SwingPeriod = 0.25
         self.YawControl = 0.0
@@ -198,7 +198,7 @@ if __name__ == "__main__":
 
     rospy.init_node('teleop_twist_keyboard')
 
-    step = rospy.get_param("~step", 0.11)
+    step = rospy.get_param("~step", 0.11) #0.11
     turn = rospy.get_param("~turn", 3.5)
     repeat = rospy.get_param("~repeat_rate", 0.0)
     key_timeout = rospy.get_param("~key_timeout", 0.0)
@@ -209,17 +209,17 @@ if __name__ == "__main__":
     pub_thread = PublishThread(repeat, spot_name)
     x = 0.0
     y = 0.0
-    z = 0.1
+    z = 0.0 #0.1
     roll = 0.0
     pitch = 0.0
     yaw = 0.0
-    StepLength = 0.1
+    StepLength = 0.045 #0.1
     LateralFraction = 0.0
     YawRate = 0.0
-    StepVelocity = 0.8
-    ClearanceHeight = 0.15
-    PenetrationDepth = 0.00003
-    SwingPeriod = 0.3
+    StepVelocity = 0.003 #0.8
+    ClearanceHeight = 0.045 #0.15
+    PenetrationDepth = 0.03 #0.00003
+    SwingPeriod = 0.2 #0.3
     YawControl = 0.0
     YawControlOn = 0.0
     status = 0

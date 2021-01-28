@@ -8,18 +8,18 @@ from collections import OrderedDict
 
 class SpotModel:
     def __init__(self,
-                 shoulder_length=0.055,
-                 elbow_length=0.10652,
-                 wrist_length=0.145,
-                 hip_x=0.23,
-                 hip_y=0.075,
-                 foot_x=0.23,
-                 foot_y=0.185,
-                 height=0.20,
+                 shoulder_length=0.110945,
+                 elbow_length=0.3205,
+                 wrist_length=0.37,
+                 hip_x=2*0.29785,
+                 hip_y=2*0.055,
+                 foot_x=2*0.29785,
+                 foot_y=2*0.2,
+                 height=0.6,
                  com_offset=0.016,
-                 shoulder_lim=[-0.548, 0.548],
-                 elbow_lim=[-2.17, 0.97],
-                 wrist_lim=[-0.1, 2.59]):
+                 shoulder_lim=[-0.78539816339744827899, 0.78539816339744827899],
+                 elbow_lim=[-0.89884456477707963539, 2.2951079663725435509],
+                 wrist_lim=[-2.7929, -0.254801]):
         """
         Spot Micro Kinematics
         """
