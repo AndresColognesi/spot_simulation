@@ -198,8 +198,8 @@ if __name__ == "__main__":
 
     rospy.init_node('teleop_twist_keyboard')
 
-    step = rospy.get_param("~step", 0.11) #0.11
-    turn = rospy.get_param("~turn", 3.5)
+    step = rospy.get_param("~step", 0.11)
+    turn = rospy.get_param("~turn", 2) #3.5)
     repeat = rospy.get_param("~repeat_rate", 0.0)
     key_timeout = rospy.get_param("~key_timeout", 0.0)
     if key_timeout == 0.0:
