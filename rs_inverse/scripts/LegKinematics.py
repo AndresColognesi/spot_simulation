@@ -5,14 +5,14 @@ import numpy as np
 
 class LegIK():
     # Big Spot:
-    # def __init__(self,
-    #              legtype="RIGHT",
-    #              shoulder_length=0.110945,
-    #              elbow_length=0.3205,
-    #              wrist_length=0.37,
-    #              hip_lim=[-0.78539816339744827899, 0.78539816339744827899],
-    #              shoulder_lim=[-0.89884456477707963539, 2.2951079663725435509],
-    #              leg_lim=[-2.7929, -0.254801]):
+    def __init__(self,
+                 legtype="RIGHT",
+                 shoulder_length=0.110945,
+                 elbow_length=0.3205,
+                 wrist_length=0.37,
+                 hip_lim=[-0.78539816339744827899, 0.78539816339744827899],
+                 shoulder_lim=[-0.89884456477707963539, 2.2951079663725435509],
+                 leg_lim=[-2.7929, -0.254801]):
     # Spot Mini Mini:
     # def __init__(self,
     #              legtype="RIGHT",
@@ -23,14 +23,14 @@ class LegIK():
     #              shoulder_lim=[-2.17, 0.97],
     #              leg_lim=[-0.1, 2.59]):
     # LaikaGo:
-    def __init__(self,
-                 legtype="RIGHT",
-                 shoulder_length=0.0875,
-                 elbow_length=0.25,
-                 wrist_length=0.25,
-                 hip_lim=[-0.87266, 1.04719],
-                 shoulder_lim=[-0.52359, 3.92699],
-                 leg_lim=[-2.77507, -0.61086]):
+    # def __init__(self,
+    #              legtype="RIGHT",
+    #              shoulder_length=0.0875,
+    #              elbow_length=0.25,
+    #              wrist_length=0.25,
+    #              hip_lim=[-0.87266, 1.04719],
+    #              shoulder_lim=[-0.52359, 3.92699],
+    #              leg_lim=[-2.77507, -0.61086]):
         self.legtype = legtype
         self.shoulder_length = shoulder_length
         self.elbow_length = elbow_length

@@ -8,19 +8,19 @@ from collections import OrderedDict
 
 class SpotModel:
     # Big Spot:
-    # def __init__(self,
-    #              shoulder_length=0.110945,
-    #              elbow_length=0.3205,
-    #              wrist_length=0.37,
-    #              hip_x=2*0.29785,
-    #              hip_y=2*0.055,
-    #              foot_x=2*0.29785,
-    #              foot_y=2*0.2,
-    #              height=0.6,
-    #              com_offset=0.016,
-    #              shoulder_lim=[-0.78539816339744827899, 0.78539816339744827899],
-    #              elbow_lim=[-0.89884456477707963539, 2.2951079663725435509],
-    #              wrist_lim=[-2.7929, -0.254801]):
+    def __init__(self,
+                 shoulder_length=0.110945,
+                 elbow_length=0.3205,
+                 wrist_length=0.37,
+                 hip_x=2*0.29785,
+                 hip_y=2*0.055,
+                 foot_x=2*0.29785,
+                 foot_y=2*0.2,
+                 height=0.6,
+                 com_offset=0.016,
+                 shoulder_lim=[-0.78539816339744827899, 0.78539816339744827899],
+                 elbow_lim=[-0.89884456477707963539, 2.2951079663725435509],
+                 wrist_lim=[-2.7929, -0.254801]):
     # Spot Mini Mini:
     # def __init__(self,
     #              shoulder_length=0.055,
@@ -36,19 +36,19 @@ class SpotModel:
     #              elbow_lim=[-2.17, 0.97],
     #              wrist_lim=[-0.1, 2.59]):
     # LaikaGo:
-    def __init__(self,
-                 shoulder_length=0.0875,
-                 elbow_length=0.25,
-                 wrist_length=0.25,
-                 hip_x=2*0.21935,
-                 hip_y=2*0.0875,
-                 foot_x=2*0.21935,
-                 foot_y=2*0.18, #nao sei
-                 height=0.38, #acho que eh isso
-                 com_offset=0.016, #chute
-                 shoulder_lim=[-0.87266, 1.04719],
-                 elbow_lim=[-0.52359, 3.92699],
-                 wrist_lim=[-2.77507, -0.61086]):
+    # def __init__(self,
+    #              shoulder_length= 0.0875,
+    #              elbow_length=0.25,
+    #              wrist_length=0.25,
+    #              hip_x=2*0.21935,
+    #              hip_y=2*0.021, #hip_length/2.0 - hip_offset   #0.019, #0875,
+    #              foot_x=2*0.21935,
+    #              foot_y=2*0.11,#0.0875, #0.18,
+    #              height=0.38, #Estimation to stand near the default stop position (from servo.cpp)
+    #              com_offset=0.002284, #Center Of Mass in X direction
+    #              shoulder_lim=[-0.87266, 1.04719],
+    #              elbow_lim=[-0.52359, 3.92699],
+    #              wrist_lim=[-2.77507, -0.61086]):
         """
         Spot Micro Kinematics
         """
