@@ -7,19 +7,48 @@ from collections import OrderedDict
 
 
 class SpotModel:
+    # Big Spot:
+    # def __init__(self,
+    #              shoulder_length=0.110945,
+    #              elbow_length=0.3205,
+    #              wrist_length=0.37,
+    #              hip_x=2*0.29785,
+    #              hip_y=2*0.055,
+    #              foot_x=2*0.29785,
+    #              foot_y=2*0.2,
+    #              height=0.6,
+    #              com_offset=0.016,
+    #              shoulder_lim=[-0.78539816339744827899, 0.78539816339744827899],
+    #              elbow_lim=[-0.89884456477707963539, 2.2951079663725435509],
+    #              wrist_lim=[-2.7929, -0.254801]):
+    # Spot Mini Mini:
+    # def __init__(self,
+    #              shoulder_length=0.055,
+    #              elbow_length=0.10652,
+    #              wrist_length=0.145,
+    #              hip_x=0.23,
+    #              hip_y=0.075,
+    #              foot_x=0.23,
+    #              foot_y=0.185,
+    #              height=0.20,
+    #              com_offset=0.016,
+    #              shoulder_lim=[-0.548, 0.548],
+    #              elbow_lim=[-2.17, 0.97],
+    #              wrist_lim=[-0.1, 2.59]):
+    # LaikaGo:
     def __init__(self,
-                 shoulder_length=0.055,
-                 elbow_length=0.10652,
-                 wrist_length=0.145,
-                 hip_x=0.23,
-                 hip_y=0.075,
-                 foot_x=0.23,
-                 foot_y=0.185,
-                 height=0.20,
-                 com_offset=0.016,
-                 shoulder_lim=[-0.548, 0.548],
-                 elbow_lim=[-2.17, 0.97],
-                 wrist_lim=[-0.1, 2.59]):
+                 shoulder_length=0.0875,
+                 elbow_length=0.25,
+                 wrist_length=0.25,
+                 hip_x=2*0.21935,
+                 hip_y=2*0.0875,
+                 foot_x=2*0.21935,
+                 foot_y=2*0.15, #não sei
+                 height=0.6, #acho que é isso
+                 com_offset=0.025, #chute
+                 shoulder_lim=[-0.87266, 1.04719],
+                 elbow_lim=[-0.52359, 3.92699],
+                 wrist_lim=[-2.77507, -0.61086]):
         """
         Spot Micro Kinematics
         """

@@ -90,7 +90,7 @@ class PublishThread(threading.Thread):
         self.LateralFraction = 0.0
         self.YawRate = 0.0
         self.StepVelocity = 1.1
-        self.ClearanceHeight = 0.06 #0.1
+        self.ClearanceHeight = 0.1 #Spot      #MiniMini: 0.06
         self.PenetrationDepth = 0.003
         self.SwingPeriod = 0.25
         self.YawControl = 0.0
