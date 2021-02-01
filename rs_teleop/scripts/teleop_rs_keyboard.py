@@ -82,17 +82,17 @@ class PublishThread(threading.Thread):
 
         self.x = 0.0
         self.y = 0.0
-        self.z = 0.1
+        self.z = 0.0 #Spot: 0.1 | MiniMini: 0.1 | LaikaGo: 0.0
         self.roll = 0.0
         self.pitch = 0.0
         self.yaw = 0.0
-        self.StepLength = 0.11
+        self.StepLength = 0.11 #This doesn't matter. The step variable matters
         self.LateralFraction = 0.0
         self.YawRate = 0.0
-        self.StepVelocity = 1.1
-        self.ClearanceHeight = 0.1 #Spot      #MiniMini: 0.06
+        self.StepVelocity = 0.8 #Spot: 1.1 | MiniMini: 1.1 | LaikaGo: 0.8
+        self.ClearanceHeight = 0.08 #Spot: 0.1 | MiniMini: 0.06 | LaikaGo: 0.08
         self.PenetrationDepth = 0.003
-        self.SwingPeriod = 0.25
+        self.SwingPeriod = 0.2 #Spot: 0.25 | MiniMini: 0.25 | LaikaGo: 0.2
         self.YawControl = 0.0
         self.YawControlOn = 0.0
         self.step = 0.0
@@ -198,7 +198,7 @@ if __name__ == "__main__":
 
     rospy.init_node('teleop_twist_keyboard')
 
-    step = rospy.get_param("~step", 0.11)
+    step = rospy.get_param("~step", 0.11) #Spot: 0.11 | MiniMini: 0.11 | LaikaGo: 0.2
     turn = rospy.get_param("~turn", 2) #3.5)
     repeat = rospy.get_param("~repeat_rate", 0.0)
     key_timeout = rospy.get_param("~key_timeout", 0.0)

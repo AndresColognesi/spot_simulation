@@ -250,11 +250,16 @@ sit_down = [[0.20, 1.0, -2.49],  # Front left leg
             [-0.20, 1.0, -2.49],  # Front right leg
             [0.20, 1.0, -2.49],  # Rear left leg
             [-0.20, 1.0, -2.49]]  # Rear right leg
-
-stand_up = [[0.20, 0.7, -1.39],  # Front left leg
-            [-0.20, 0.7, -1.39],  # Front right leg
-            [0.20, 0.7, -1.39],  # Rear left leg
-            [-0.20, 0.7, -1.39]]  # Rear right leg
+# Big Spot:
+# stand_up = [[0.20, 0.7, -1.39],  # Front left leg
+#             [-0.20, 0.7, -1.39],  # Front right leg
+#             [0.20, 0.7, -1.39],  # Rear left leg
+#             [-0.20, 0.7, -1.39]]  # Rear right leg
+# LaikaGo:
+stand_up = [[0.0, 0.67, -1.3],  # Front left leg
+            [-0.0, 0.67, -1.3],  # Front right leg
+            [0.0, 0.67, -1.3],  # Rear left leg
+            [-0.0, 0.67, -1.3]]  # Rear right leg
 
 
 def main():

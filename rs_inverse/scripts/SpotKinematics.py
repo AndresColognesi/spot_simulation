@@ -43,9 +43,9 @@ class SpotModel:
                  hip_x=2*0.21935,
                  hip_y=2*0.0875,
                  foot_x=2*0.21935,
-                 foot_y=2*0.15, #não sei
-                 height=0.6, #acho que é isso
-                 com_offset=0.025, #chute
+                 foot_y=2*0.18, #nao sei
+                 height=0.38, #acho que eh isso
+                 com_offset=0.016, #chute
                  shoulder_lim=[-0.87266, 1.04719],
                  elbow_lim=[-0.52359, 3.92699],
                  wrist_lim=[-2.77507, -0.61086]):
