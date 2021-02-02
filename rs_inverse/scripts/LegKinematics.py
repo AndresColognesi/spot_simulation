@@ -27,7 +27,7 @@ class LegIK():
                  legtype="RIGHT",
                  shoulder_length=0.0685, #leg_offset_y - hip_offset = 0.0685   #0.0875,
                  elbow_length=0.25,
-                 wrist_length=0.25, #+0.0265, #calf_length + foot_radius
+                 wrist_length=0.25+0.0265, #calf_length + foot_radius
                  hip_lim=[-0.87266, 1.04719],
                  shoulder_lim=[-0.52359, 3.92699],
                  leg_lim=[-2.77507, -0.61086]):

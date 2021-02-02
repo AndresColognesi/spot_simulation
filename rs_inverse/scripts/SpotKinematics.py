@@ -39,12 +39,12 @@ class SpotModel:
     def __init__(self,
                  shoulder_length= 0.0685, #leg_offset_y - hip_offset = 0.0685   #0.0875,
                  elbow_length=0.25, #thigh_length
-                 wrist_length=0.25, #+0.0265, #calf_length + foot_radius
+                 wrist_length=0.25+0.0265, #calf_length + foot_radius
                  hip_x=2*0.21935,
                  hip_y=2*0.019, #hip_length/2.0 - hip_offset = 0.021   #0.019, #0875,
                  foot_x=2*0.21935,
-                 foot_y=2*0.0875, #0.099 #0.18, #0.11
-                 height=0.39, #0.38, #Estimation to stand near the default stop position (from servo.cpp)
+                 foot_y=2*(0.0875 + 0.0425), #open a bit more than leg_offset_y
+                 height=0.45, #0.38, #Estimation to stand near the default stop position (from servo.cpp): 0.39
                  com_offset=0.002284, #Center Of Mass in X direction
                  shoulder_lim=[-0.87266, 1.04719],
                  elbow_lim=[-0.52359, 3.92699],
